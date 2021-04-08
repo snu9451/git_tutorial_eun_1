@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+
+        section{
+            width: 50%;
+            margin: 50px auto;
+            background-color: brown;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        span, h1, h3{
+            color: white;
+        }
+
+        img{
+            z-index: 100;
+            will-change: opacity;
+            /* 바뀔 것으로 예정된(will-change) 항목(?)에 opacity를 줘서 레이어를 분리. */
+            /* 쌤; will-change 옵션을 주고 투명도가 바뀔 것을 암시하기 때문에, 브라우저가 이미지 레이어를 분리한다.*/
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <img src="images/unnamed.gif">
+        <h1>헤드라인</h1>
+        <h3>h3태그는 블록요소입니다.</h3>
+    </section>
+    <!-- span과 section은 같은 레벨이므로 들여쓰지 않는다. -->
+    <!-- Live Server는 Tomcat 서버와는 다르게 JVM이나 Servlet같은 엔진이 들어있지는 않다. -->
+    <span>Hello DOM - KEY</span>
+</body>
+</html>
